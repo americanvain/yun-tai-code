@@ -25,7 +25,7 @@
 
 #define MPU6500_USE_DATA_READY_EXIT //是否使用MPU6500的外部中断，不使用注释定义
 
-#define MPU6500_USE_SPI_DMA //是否使用SPI的DMA传输，不使用注释定义
+#define MPU6500_USE_SPI_DMA//是否使用SPI的DMA传输，不使用注释定义
 
 //如果用了IST8310，DMA传输23个字节，如果不用，少7个字节，为16个字节
 #if defined(USE_IST8310)

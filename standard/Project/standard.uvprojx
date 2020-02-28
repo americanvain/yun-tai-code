@@ -16,8 +16,8 @@
         <TargetCommonOption>
           <Device>STM32F427IIHx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32F4xx_DFP.2.13.0</PackID>
-          <PackURL>http://www.keil.com/pack</PackURL>
+          <PackID>Keil.STM32F4xx_DFP.2.14.0</PackID>
+          <PackURL>http://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x30000) IRAM2(0x10000000,0x10000) IROM(0x08000000,0x200000) CPUTYPE("Cortex-M4") FPU2 CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -324,7 +324,7 @@
             <wLevel>2</wLevel>
             <uThumb>0</uThumb>
             <uSurpInc>0</uSurpInc>
-            <uC99>0</uC99>
+            <uC99>1</uC99>
             <uGnu>0</uGnu>
             <useXO>0</useXO>
             <v6Lang>1</v6Lang>
@@ -413,64 +413,9 @@
               <FilePath>..\FWLIB\src\misc.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f4xx_adc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_adc.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32f4xx_can.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\FWLIB\src\stm32f4xx_can.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_cec.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_cec.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_crc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_crc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_cryp.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_cryp.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_cryp_aes.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_cryp_aes.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_cryp_des.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_cryp_des.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_cryp_tdes.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_cryp_tdes.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_dac.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_dac.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_dbgmcu.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_dbgmcu.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_dcmi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_dcmi.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_dfsdm.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_dfsdm.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_dma.c</FileName>
@@ -483,34 +428,9 @@
               <FilePath>..\FWLIB\src\stm32f4xx_dma2d.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f4xx_dsi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_dsi.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32f4xx_exti.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\FWLIB\src\stm32f4xx_exti.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_flash.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_flash.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_flash_ramfunc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_flash_ramfunc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_fmc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_fmc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_fmpi2c.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_fmpi2c.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_gpio.c</FileName>
@@ -518,89 +438,14 @@
               <FilePath>..\FWLIB\src\stm32f4xx_gpio.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f4xx_hash.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_hash.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_hash_md5.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_hash_md5.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_hash_sha1.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_hash_sha1.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32f4xx_i2c.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\FWLIB\src\stm32f4xx_i2c.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f4xx_iwdg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_iwdg.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_lptim.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_lptim.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_ltdc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_ltdc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_pwr.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_pwr.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_qspi.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_qspi.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_rcc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_rcc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_rng.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_rng.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_rtc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_rtc.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_sai.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_sai.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_sdio.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_sdio.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_spdifrx.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_spdifrx.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32f4xx_spi.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\FWLIB\src\stm32f4xx_spi.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f4xx_syscfg.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_syscfg.c</FilePath>
             </File>
             <File>
               <FileName>stm32f4xx_tim.c</FileName>
@@ -613,9 +458,29 @@
               <FilePath>..\FWLIB\src\stm32f4xx_usart.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f4xx_wwdg.c</FileName>
+              <FileName>stm32f4xx_rng.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\FWLIB\src\stm32f4xx_wwdg.c</FilePath>
+              <FilePath>..\FWLIB\src\stm32f4xx_rng.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_syscfg.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FWLIB\src\stm32f4xx_syscfg.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FWLIB\src\stm32f4xx_adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FWLIB\src\stm32f4xx_rcc.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f4xx_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FWLIB\src\stm32f4xx_flash.c</FilePath>
             </File>
           </Files>
         </Group>
