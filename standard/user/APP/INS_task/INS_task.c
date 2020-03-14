@@ -40,6 +40,8 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
+#include "led.h"
+
 #define IMUWarnBuzzerOn() buzzer_on(95, 10000) //开机陀螺仪校准蜂鸣器
 
 #define IMUWarnBuzzerOFF() buzzer_off() //开机陀螺仪校准蜂鸣器关闭
@@ -268,7 +270,8 @@ void INSTask(void *pvParameters)
                     }
                     else if (start_gyro_cali_time < GYRO_OFFSET_START_TIME)
                     {
-                        IMUWarnBuzzerOn();
+											 led_red_on();
+                        //IMUWarnBuzzerOn();
                         if( first_temperate)
                         {
                             //当进入gyro_offset函数，如果无运动start_gyro_cali_time++，如果有运动 start_gyro_cali_time = 0
@@ -277,7 +280,8 @@ void INSTask(void *pvParameters)
                     }
                     else if (start_gyro_cali_time == GYRO_OFFSET_START_TIME)
                     {
-
+											led_red_off();
+			
                         IMUWarnBuzzerOFF();
                         start_gyro_cali_time++;
                     }

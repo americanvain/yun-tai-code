@@ -74,12 +74,12 @@ void start_task(void *pvParameters)
                 (UBaseType_t)GIMBAL_TASK_PRIO,
                 (TaskHandle_t *)&GIMBALTask_Handler);
 
-    xTaskCreate((TaskFunction_t)chassis_task,
-                (const char *)"ChassisTask",
-                (uint16_t)Chassis_STK_SIZE,
-                (void *)NULL,
-                (UBaseType_t)Chassis_TASK_PRIO,
-                (TaskHandle_t *)&ChassisTask_Handler);
+//    xTaskCreate((TaskFunction_t)chassis_task,
+//                (const char *)"ChassisTask",
+//                (uint16_t)Chassis_STK_SIZE,
+//                (void *)NULL,
+//                (UBaseType_t)Chassis_TASK_PRIO,
+//                (TaskHandle_t *)&ChassisTask_Handler);
 
     xTaskCreate((TaskFunction_t)UserTask,
                 (const char *)"UserTask",
@@ -88,19 +88,19 @@ void start_task(void *pvParameters)
                 (UBaseType_t)User_TASK_PRIO,
                 (TaskHandle_t *)&UserTask_Handler);
 
-    xTaskCreate((TaskFunction_t)calibrate_task,
-                (const char *)"CaliTask",
-                (uint16_t)CALIBRATE_STK_SIZE,
-                (void *)NULL,
-                (UBaseType_t)CALIBRATE_TASK_PRIO,
-                (TaskHandle_t *)&CalibrateTask_Handler);
+//    xTaskCreate((TaskFunction_t)calibrate_task,
+//                (const char *)"CaliTask",
+//                (uint16_t)CALIBRATE_STK_SIZE,
+//                (void *)NULL,
+//                (UBaseType_t)CALIBRATE_TASK_PRIO,
+//                (TaskHandle_t *)&CalibrateTask_Handler);
 
-    xTaskCreate((TaskFunction_t)DetectTask,
-                (const char *)"DetectTask",
-                (uint16_t)Detect_STK_SIZE,
-                (void *)NULL,
-                (UBaseType_t)Detect_TASK_PRIO,
-                (TaskHandle_t *)&DetectTask_Handler);
+//    xTaskCreate((TaskFunction_t)DetectTask,
+//                (const char *)"DetectTask",
+//                (uint16_t)Detect_STK_SIZE,
+//                (void *)NULL,
+//                (UBaseType_t)Detect_TASK_PRIO,
+//                (TaskHandle_t *)&DetectTask_Handler);
 
     vTaskDelete(StartTask_Handler); //删除开始任务
     taskEXIT_CRITICAL();            //退出临界区

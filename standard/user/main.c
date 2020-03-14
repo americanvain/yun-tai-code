@@ -73,25 +73,25 @@ void BSP_init(void)
     RNG_init();
 #endif
     //24输出控制口 初始化
-    power_ctrl_configuration();
+//    power_ctrl_configuration();
     //摩擦轮电机PWM初始化
     fric_PWM_configuration();
     //蜂鸣器初始化
     buzzer_init(30000, 90);
     //激光IO初始化
-    laser_configuration();
+//    laser_configuration();
     //定时器6 初始化
     TIM6_Init(60000, 90);
     //CAN接口初始化
     CAN1_mode_init(CAN_SJW_1tq, CAN_BS2_2tq, CAN_BS1_6tq, 5, CAN_Mode_Normal);
     CAN2_mode_init(CAN_SJW_1tq, CAN_BS2_2tq, CAN_BS1_6tq, 5, CAN_Mode_Normal);
 
-    //24v 输出 依次上电
-    for (uint8_t i = POWER1_CTRL_SWITCH; i < POWER4_CTRL_SWITCH + 1; i++)
-    {
-        power_ctrl_on(i);
-        delay_us(POWER_CTRL_ONE_BY_ONE_TIME);
-    }
+//    //24v 输出 依次上电
+//    for (uint8_t i = POWER1_CTRL_SWITCH; i < POWER4_CTRL_SWITCH + 1; i++)
+//    {
+//        power_ctrl_on(i);
+//        delay_us(POWER_CTRL_ONE_BY_ONE_TIME);
+//    }
     //遥控器初始化
     remote_control_init();
     //flash读取函数，把校准值放回对应参数

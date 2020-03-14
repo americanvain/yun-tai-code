@@ -62,6 +62,7 @@ static uint32_t *cali_sensor_buf[CALI_LIST_LENGHT] =
         (uint32_t *)&mag_cali};
 
 //校准设备对应放入数据大小
+//功能：百度搜索sizeof结构体  /zxf
 static uint8_t cali_sensor_size[CALI_LIST_LENGHT] =
     {
         sizeof(head_cali_t) / 4, sizeof(gimbal_cali_t) / 4,
